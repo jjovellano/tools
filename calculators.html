@@ -7,60 +7,19 @@
     <link rel="stylesheet" href="Assets/scripts/jerome.css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <title>Jerome Tools V1.0: Calculators </title>
-    <style>
-
-    /* Set additional styling options for the columns*/
-    .column {
-    float: left;
-    width: 50%;
-    height: 50%;
-    }
-
-    .row:after {
-    content: "";
-    display: table;
-    clear: both;
-    }
-    
-        /* Add a black background color to the top navigation */
-.topnav {
-  background-color: rgb(33, 13, 4);
-  overflow: hidden;
-}
-
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: rgb(52, 235, 232);
-  color: black;
-}
-
-/* Add a color to the active/current link */
-.topnav a.active {
-  background-color: #04AA6D;
-  color: white;
-}
-    </style>
+  
 
 
   </head>
   <body">
-    
-    <div class="topnav">
-        <a class="active" href="index.html">Home</a>
-        <a href="#home">Calculators</a>
-        <a href="templates.html">Lost Property</a>
-        <a href="#about">About</a>
-      </div>
+  <div id="nav-placeholder">
+
+  </div>
+  <script>
+    $(function(){
+      $("#nav-placeholder").load("/Assets/php/navbar.html");
+    });
+    </script>
       <div class="row">
         
               

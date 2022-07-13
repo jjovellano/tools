@@ -15,115 +15,92 @@
     <div id="nav-placeholder">
 
     </div>
+    <script>
+      $(function(){
+        $("#nav-placeholder").load("/Assets/php/navbar.html");
+      });
+      </script>
+
+<div class="row">
+  <div class="column" style="background-color: rgb(134, 189, 209);">
+ <h3>Notepad</h3>
+  <textarea id="note" cols="70" rows="30"></textarea><br>
+  </div>
+  <div class="column" style="background-color: rgb(134, 189, 209)" >
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search phone numbers">
+
+    <table id="myTable">
+      <tr class="header">
+        <th style="width:40%;">Name</th>
+        <th style="width:60%;">Phone Number</th>
+      </tr>
+      <tr>
+        <td>Auckland Airport</td>
+        <td>0800 247 767</td>
+      </tr>
+      <tr>
+        <td>Auckland Transport</td>
+        <td>09 366 6400</td>
+      </tr>
+      <tr>
+        <td>Baybus(Rot/Trg/Whk)</td>
+        <td>08004229287</td>
+      </tr>
+      <tr>
+        <td>BUSIT - Hamilton/Waikato</td>
+        <td>0800 205 305</td>
+      </tr>
+      <tr>
+        <td>Friendship House Manukau</td>
+        <td>09 262 2322</td>
+      </tr>
+      <tr>
+        <td>Hobbiton</td>
+        <td>078881505</td>
+      </tr>
+      <tr>
+        <td>Interislander</td>
+        <td>0800 802 802</td>
+      </tr>
+      <tr>
+        <td>Metlink Wellington</td>
+        <td>0800 801 700</td>
+      </tr>
+      <tr>
+        <td>Metro Christchurch</td>
+        <td>03 366 8855</td>
+      </tr>
+      <tr>
+        <td>Orbus Queenstown Dunedin Bus</td>
+        <td>0800 672 8736</td>
+      </tr>
+      <tr>
+        <td>Queenstown Airport</td>
+        <td>03 345 09031</td>
+      </tr>
+      <tr>
+        <td>Tracknet Queenstown to Te Anau</td>
+        <td>0800 483 262</td>
+      </tr>
+      <tr>
+        <td>Tranzalpine</td>
+        <td>0800 872 467</td>
+      </tr>
+      <tr>
+        <td>Welllington Airport</td>
+        <td>04 385 5100</td>
+      </tr>
+    </table>
+  </div>
+
      <BR> 
-        <div class="row">
-            <div class="column">
-                Templates
-                <select name="cars" id="emailTemplate">
-                    <option value="carryon">Lost Property Carryon</option>
-                    <option value="undercarriage">Lost Propery Undercarriage</option>
-                    <option value="goldImpact">Gold Impact</option>
-                    <option value="serviceImpact">Service Impact</option>
-                  </select> <button>Apply Template</button> <button id="btn">Clear Notes</button> <BR> <BR>
-        
-              <textarea name="" id="note" cols="50" rows="20"></textarea><br>
-              
-    
-            </div>
-            <div class="column">
-                <Br><Br>
-                <iframe id="iframe" width="650" height="500" frameborder="1" scrolling="yes" src="https://intercitygroupnz.sharepoint.com/sites/ContactCentre2/_layouts/15/Doc.aspx?sourcedoc={984cfa0a-da68-4d54-a942-f110c65ece54}&action=embedview&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True&edesNext=false&ejss=false"></iframe>            
-                <h1>3rd Party Numbers</h1>
-                <table border="">
-                    <tr>
-                      <th>Name</th>
-                      <th>Phone Number</th>
-                    </tr>
-                    <tr>
-                      <td>Interislander</td>
-                      <td>0800 802 802 </td>
-                    </tr>
-                    <tr>
-                        <td>tranzalipine</td>
-                        <td>0800 872 467</td>
-                      </tr>
-                      <tr>
-                        <td>Metlink Wellington</td>
-                        <td> 0800 801 700</td>
-                      </tr>
-                      <tr>
-                        <td>BUSIT Hamilton</td>
-                        <td>0800 205 305</td>
-                      </tr>
-                      <tr>
-                        <td>Metro Christchurch</td>
-                        <td>033668855</td>
-                      </tr>
-                      <tr>
-                        <td>Dunedin Bus</td>
-                        <td>03 474 0287</td>
-                      </tr>
-                      <tr>
-                        <td>Orbust Queenstown</td>
-                        <td> 0800 672877</td>
-                      </tr>
-                      <tr>
-                        <td>Hobbiton</td>
-                        <td>078881505</td>
-                      </tr>
-                      <tr>
-                        <td>Auckland Transport</td>
-                        <td>09 366 6400</td>
-                      </tr>
-                      <tr>
-                        <td>Auckland Airport</td>
-                        <td>0800 247 767</td>
-                      </tr>
-                      <tr>
-                        <td>Wellington Airport</td>
-                        <td>43855100</td>
-                      </tr>
-                      <tr>
-                        <td>Queenstown Airport</td>
-                        <td>34509031</td>
-                      </tr>
-                      <tr>
-                        <td>TRACKNET QUEENSTOWN TO TE ANUA</td>
-                        <td>0800 483 262</td>
-                      </tr>
-                      <tr>
-                        <td>Baybay ROT TAURANGA MURUPARA BUS</td>
-                        <td>8004229287</td>
-                      </tr>
-                  </table> 
-            </div>
-          </div>
        
 
 
-   <script>
+ 
 
-const textarea = document.getElementById('note');
-
-
-// ✅ Clear textarea value
-textarea.value = '';
-
-// ✅ Clear textarea value on click
-const btn = document.getElementById('btn');
-
-btn.addEventListener('click', function handleClick() {
-  // 👇️ log value before clearing it
-  console.log(textarea.value);
-
-  // 👇️ clear textarea value
-  textarea.value = '';
-  reload();
-});
-   </script>
-
-
-
-    
+      <div class="bottomnav">
+        Jerome Tools Beta Version 2022
+       </div>
   </body>
 </html>

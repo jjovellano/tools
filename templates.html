@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript" src="Assets/scripts/script.js"></script>
     <link rel="stylesheet" href="Assets/scripts/jerome.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
     <title>Jerome Tools V1.0: Templates </title>
 
 
@@ -12,12 +14,15 @@
   </head>
   <body onload="showLPform()">
     
-    <div class="topnav">
-        <a class="active" href="index.html">Home</a>
-        <a href="calculators.html">Calculators</a>
-        <a href="#home">Lost Property</a>
-        <a href="#about">About</a>
-      </div>
+    <div id="nav-placeholder">
+
+    </div>
+    <script>
+      $(function(){
+        $("#nav-placeholder").load("/Assets/php/navbar.html");
+      });
+      </script>
+
       <div class="row">
         <div class="column" style="background-color: rgb(134, 189, 209);">
             Lost property type <BR>

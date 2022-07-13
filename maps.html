@@ -3,22 +3,23 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="text/javascript" src="Assets/scripts/script.j"></script>
+    <script type="text/javascript" src="Assets/scripts/script.js"></script>
     <link rel="stylesheet" href="Assets/scripts/jerome.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <title>Jerome Tools V1.0: Maps </title>
 
     
 
   </head>
   <body">
-    
-    <div class="topnav">
-        <a class="active" href="index.html">Home</a>
-        <a href="#home">Calculators</a>
-        <a href="templates.html">Lost Property</a>
-        <a href="#about">About</a>
-      </div>
-      <div class="row">
+  <div id="nav-placeholder">
+
+  </div>
+  <script>
+    $(function(){
+      $("#nav-placeholder").load("/Assets/php/navbar.html");
+    });
+    </script>
         
               
     </div>
