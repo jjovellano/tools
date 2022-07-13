@@ -113,5 +113,5 @@ function clearForm() {
 
 function openCRM() {
     var pnr = document.getElementById('pnr').value;
-    window.open('https://intercitygroupnz.crm6.dynamics.com/main.aspx?app=d365default&forceUCI=1&pagetype=search&searchText="' + pnr + '" &searchType=1')  
+    window.open('https://intercitygroupnz.crm6.dynamics.com/main.aspx?app=d365default&forceUCI=1&pagetype=search&searchText=' + pnr + '&searchType=1')  
 }
