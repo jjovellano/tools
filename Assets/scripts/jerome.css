@@ -41,7 +41,7 @@
 
 #myInput {
   margin-top: 5px;
-  background-image: url('/Assets/images/search.png'); /* Add a search icon to input */
+  background-image: url('search.png'); /* Add a search icon to input */
   background-position: 2px 2px; /* Position the search icon */
   background-repeat: no-repeat; /* Do not repeat the icon image */
   width: 70%; /* Full-width */
