@@ -115,3 +115,9 @@ function openCRM() {
     var pnr = document.getElementById('pnr').value;
     window.open(`https://intercitygroupnz.crm6.dynamics.com/main.aspx?app=d365default&forceUCI=1&pagetype=search&searchText=${pnr}`)  
 }
+
+
+function openCRM2() {
+    var pnr2 = document.getElementById('pnr2').value;
+    window.open(`https://intercitygroupnz.crm6.dynamics.com/main.aspx?app=d365default&forceUCI=1&pagetype=search&searchText=${pnr2}`)  
+}
