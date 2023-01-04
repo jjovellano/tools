@@ -54,9 +54,7 @@ var colourSizeBrand = document.getElementById('colourSizeBrand').value.toUpperCa
 var whereOnTheBus = document.getElementById('whereOnTheBus').value.toLowerCase();
 var bagContents = document.getElementById('bagContents').value.toLowerCase();
 var reasonWhy = document.getElementById('reasonWhy').value.toLowerCase();
-textarea.value = "Ref:" + surname +" " + item + "-" +pnr  + " " +
- +
- "  " + itemDescription +
+textarea.value = "Ref:" + surname +" " + item + "-" +pnr  + " " + itemDescription +
  "@" + colourSizeBrand +
  " View email or website for bus stop description. Intercity ";
  
