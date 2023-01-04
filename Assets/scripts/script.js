@@ -57,7 +57,7 @@ var reasonWhy = document.getElementById('reasonWhy').value.toLowerCase();
 textarea.value = "Ref:" + surname +" " + item + "-" +pnr  + " " +
  +
  "  " + itemDescription +
- "@ " + colourSizeBrand +
+ "@" + colourSizeBrand +
  " View email or website for bus stop description. Intercity ";
  
 }
