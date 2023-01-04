@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="Assets/scripts/script.js"></script>
+    <link rel="stylesheet" href="Assets/scripts/jerome.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <title>Jerome Tools V1.0: Templates </title>
+
+
+
+  </head>
+  <body onload="showLPform()">
+    
+    <div id="nav-placeholder">
+
+    </div>
+    <script>
+      $(function(){
+        $("#nav-placeholder").load("/Assets/php/navbar.html");
+      });
+      </script>
+
+      <div class="row">
+        <div class="column" style="background-color: rgb(134, 189, 209);">
+            <BR>
+            <form id="carryonForm">
+            Reference : <input type="text" id="surname" onchange="generateTemplateSMS()"><br>
+            From : <input type="text" id="item" onchange="generateTemplateSMS()"><br>
+            To : <input type="text" id="pnr" maxlength="7" onchange="generateTemplateSMS()">
+            <BR>
+
+Date:<BR> <textarea id="itemDescription" rows="2" onchange="generateTemplateSMS()" style="text-transform:uppercase"  ></textarea><br>
+Time:<BR> <textarea id="colourSizeBrand" rows="2" onchange="generateTemplateSMS()"></textarea><br>
+
+ <textarea hidden id="whereOnTheBus" rows="2" onchange="generateTemplateSMS()"></textarea><br>
+<textarea hidden id="bagContents" rows="2" onchange="generateTemplateSMS()"></textarea>
+ <textarea  hidden id="reasonWhy"rows="2" onchange="generateTemplateSMS()"></textarea>
+    <button id="btnClear" type="button" onclick="clearForm()">Clear Form</button><BR><BR>
+
+        </form>
+
+        <form id="undercarriageForm">
+            Passenger surname : <input type="text" id="surname2" onchange="generateTemplate2()"><br>
+            Item : <input type="text" id="item2" onchange="generateTemplate2()"><br>
+            PNR : <input type="text" id="pnr2" maxlength="7" onchange="generateTemplate2()"> 
+            <button id="btnCrm" type="button" onclick="openCRM2()">find in CRM</button><BR><br><br> 
+
+Description of the missing item:<BR> <textarea id="itemDescription2" rows="2" onchange="generateTemplate2()" ></textarea><br>
+Colour/Size/Brand:<BR> <textarea id="colourSizeBrand2" rows="2" onchange="generateTemplate2()"></textarea><br>
+If its a bag contents of the bag:<BR> <textarea id="bagContents2" rows="2" onchange="generateTemplate2()"></textarea><br>
+Reason why they forgot it:<BR> <textarea  id="reasonWhy2"rows="2" onchange="generateTemplate2()"></textarea><br>
+
+Was the bag labelled:<BR> <textarea id="bagLabelled" rows="2" onchange="generateTemplate2()" ></textarea><br>
+did you advise the driver:<BR><textarea id="adviseDriver" rows="2" onchange="generateTemplate2()" ></textarea>  <br>
+did you put your own bag on the bus:<BR> <textarea id="ownBag" rows="2" onchange="generateTemplate2()" ></textarea><br>
+If its a transfer service did the driver transferred the bag:<BR> <textarea id="transfer" rows="2" onchange="generateTemplate2()" ></textarea><br>
+    <BR><button id="btn" type="button" onclick="copyToClipboard()">Copy to clipboard</button><BR>
+        <BR><button id="btnClear" type="button" onclick="clearForm()">Clear Form</button><BR>
+        </form>
+
+        </div>
+        <div class="column" style="background-color: rgb(134, 189, 209)"" >
+            <BR>
+            <textarea id="note" cols="70" rows="42"></textarea><br>
+        </div>
+       
+              
+    </div>
+        
+    </div>
+
+    <div class="bottomnav">
+       Jerome Tools Beta Version 2022
+      </div>
+  </body>
+</html>
