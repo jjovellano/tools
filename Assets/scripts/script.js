@@ -43,6 +43,25 @@ function generateTemplate() {
    
 }
 
+function generateTemplateSMS() {
+   
+  const textarea = document.getElementById('note');
+  var surname = document.getElementById('surname').value.toUpperCase();
+var item = document.getElementById('item').value.toUpperCase();
+var pnr = document.getElementById('pnr').value.toUpperCase();
+var itemDescription = document.getElementById('itemDescription').value.toUpperCase();
+var colourSizeBrand = document.getElementById('colourSizeBrand').value.toUpperCase();
+var whereOnTheBus = document.getElementById('whereOnTheBus').value.toLowerCase();
+var bagContents = document.getElementById('bagContents').value.toLowerCase();
+var reasonWhy = document.getElementById('reasonWhy').value.toLowerCase();
+textarea.value = "Ref:" + surname +" " + item + "-" +pnr  + " " +
+ +
+ "  " + itemDescription +
+ "@ " + colourSizeBrand +
+ " View email or website for bus stop description. Intercity ";
+ 
+}
+
 function generateTemplate2() {
 
 const textarea = document.getElementById('note');
