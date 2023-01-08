@@ -57,7 +57,7 @@ var bagContents = document.getElementById('bagContents').value.toLowerCase();
 var reasonWhy = document.getElementById('reasonWhy').value.toLowerCase();
 textarea.value = "0" + phoneNumber + "@sms.tnz.co.nz" + "\r\n" + "\r\n" + "Ref:" + surname +" " + item + "-" +pnr  + " " + itemDescription +
  "@" + colourSizeBrand +
- " view website for bus stop description. Intercity.co.nz ";
+ " view email or website for bus stop description. Intercity.co.nz ";
  
 }
 
