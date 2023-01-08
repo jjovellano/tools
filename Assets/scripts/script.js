@@ -47,6 +47,7 @@ function generateTemplateSMS() {
    
   const textarea = document.getElementById('note');
   var surname = document.getElementById('surname').value.toUpperCase();
+  var phoneNumber = document.getElementById('phoneNumber').value.toUpperCase();
 var item = document.getElementById('item').value.toUpperCase();
 var pnr = document.getElementById('pnr').value.toUpperCase();
 var itemDescription = document.getElementById('itemDescription').value.toUpperCase();
@@ -54,7 +55,7 @@ var colourSizeBrand = document.getElementById('colourSizeBrand').value.toUpperCa
 var whereOnTheBus = document.getElementById('whereOnTheBus').value.toLowerCase();
 var bagContents = document.getElementById('bagContents').value.toLowerCase();
 var reasonWhy = document.getElementById('reasonWhy').value.toLowerCase();
-textarea.value = "Ref:" + surname +" " + item + "-" +pnr  + " " + itemDescription +
+textarea.value = "0" + phoneNumber + "@sms.tnz.com.nz" + "\r\n" + "\r\n" + "Ref:" + surname +" " + item + "-" +pnr  + " " + itemDescription +
  "@" + colourSizeBrand +
  " View email or website for bus stop description. Intercity ";
  
