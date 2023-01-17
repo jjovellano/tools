@@ -25,7 +25,7 @@
       <div class="row">
         <div class="column" style="background-color: rgb(134, 189, 209);">
             <BR>
-            <form id="carryonForm">
+            <form id="carryonForm" >
             Phone Number : <input type="text" id="phoneNumber" onchange="generateTemplateSMS()"><br><br>
             Reference : <input type="text" id="surname" onchange="generateTemplateSMS()"><br>
             From : <input type="text" id="item" onchange="generateTemplateSMS()"><br>
@@ -64,7 +64,10 @@ If its a transfer service did the driver transferred the bag:<BR> <textarea id="
         </div>
         <div class="column" style="background-color: rgb(134, 189, 209)"" >
             <BR>
+              <form method="post" action="javascript:;" onSubmit="this.action='mailto:' +'0'+document.getElementById('phoneNumber').value +'@sms.tnz.co.nz';" enctype...>
             <textarea id="note" cols="70" rows="42"></textarea><br>
+            <input type="submit" value="Submit" />
+          </form>
         </div>
        
               
