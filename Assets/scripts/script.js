@@ -93,7 +93,6 @@ function copyToClipboard() {
     const textarea = document.getElementById('note');
     textarea.select();
     document.execCommand('copy');
-    window.alert("copied to clipboard");
 }
 
 function hideLPform() {
