@@ -32,7 +32,7 @@ function generateTemplate() {
   var whereOnTheBus = document.getElementById('whereOnTheBus').value.toLowerCase();
   var bagContents = document.getElementById('bagContents').value.toLowerCase();
   var reasonWhy = document.getElementById('reasonWhy').value.toLowerCase();
-  textarea.value = surname +"/carryon/" + item + "/" +pnr + "\r\n"+ "\r\n" + 
+  textarea.value = "Carryon – " + surname + " //" + pnr + " - " + item + "\r\n\r\n";
    "CARRY ON" + "\r\n" +
    "DESCRIPTION OF THE MISSING ITEM: " + itemDescription + "\r\n" +
    "COLOUR/SIZE/BRAND: " + colourSizeBrand + "\r\n" +
