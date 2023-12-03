@@ -28,12 +28,12 @@
             <form id="carryonForm" >
             Phone Number : <input type="text" id="phoneNumber" onchange="generateTemplateSMS()"> eg 291268430 NO 0 <br><br>
             Reference : <input type="text" id="surname" onchange="generateTemplateSMS()"><br>
-            From : <input type="text" id="item" onchange="generateTemplateSMS()"> eg AKL<br>
-            To : <input type="text" id="pnr" maxlength="7" onchange="generateTemplateSMS()"> eg HLZ
+            From : <input type="text" id="item" maxlength="3" onchange="generateTemplateSMS()"> eg AKL<br>
+            To : <input type="text" id="pnr" maxlength="3" onchange="generateTemplateSMS()"> eg HLZ
             <BR>
 
-Date:<BR> <textarea id="itemDescription" rows="2" onchange="generateTemplateSMS()" style="text-transform:uppercase"  ></textarea> eg 18JAN<br>
-Time:<BR> <textarea id="colourSizeBrand" rows="2" onchange="generateTemplateSMS()"></textarea> eg 8:35pm<br>
+Date:<BR> <textarea id="itemDescription" rows="2" maxlength="4" onchange="generateTemplateSMS()" style="text-transform:uppercase"  ></textarea> eg 18JAN<br>
+Time:<BR> <textarea id="colourSizeBrand" rows="2" maxlength="6" onchange="generateTemplateSMS()"></textarea> eg 8:35pm<br>
 
  <textarea hidden id="whereOnTheBus" rows="2" onchange="generateTemplateSMS()"></textarea><br>
 <textarea hidden id="bagContents" rows="2" onchange="generateTemplateSMS()"></textarea>
