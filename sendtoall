@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Assets/scripts/jerome.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <title>Jerome Tools V1.0</title>
+  </head>
+  <body>
+    <div id="nav-placeholder">
+      <!-- Header navigation will load here -->
+    </div>
+
+    <script>
+      $(function(){
+        $("#nav-placeholder").load("navbar.html"); // Load the navigation content
+      });
+    </script>
+  </body>
+</html>
