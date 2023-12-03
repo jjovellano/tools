@@ -95,6 +95,12 @@ function copyToClipboard() {
     document.execCommand('copy');
 }
 
+function copyToClipboardEmail() {
+  const textarea = document.getElementById('emailList');
+  textarea.select();
+  document.execCommand('copy');
+}
+
 function hideLPform() {
     document.getElementById("carryonForm").style.display="none";
 }
