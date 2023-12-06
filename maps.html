@@ -20,6 +20,23 @@
       $("#nav-placeholder").load("navbar.html");
     });
     </script>
+
+     <script>
+    function searchLocation() {
+      // Get the value from the input field
+      var location = document.getElementById('location-input').value;
+
+      // Perform your search or manipulate the map based on the entered location
+      // You may use the Google Maps JavaScript API to perform the search or manipulate the map accordingly
+      // Example: Use the Geocoding service to convert the address to coordinates and center the map
+      // This would require additional JavaScript code utilizing the Google Maps API
+    }
+  </script>
+
+      <div>
+    <input id="location-input" type="text" placeholder="Search for a location">
+    <button onclick="searchLocation()">Search</button>
+  </div>
                                               
   <iframe src="https://www.google.co.nz/maps/d/embed?mid=1SOqYcwVoqfUt0gzYsZ9fW2r3VfyrTXI&ehbc=2E312F" width="640" height="480"></iframe>
         
