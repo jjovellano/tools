@@ -8,6 +8,11 @@
 
     <title>Jerome Tools V1.0</title>
 
+    <script>
+  function clearTextArea() {
+    document.getElementById('note').value = ''; // Clears the content of the textarea
+  }
+</script>
 
   </head>
   <body>
@@ -23,6 +28,7 @@
 <div class="row">
   <div class="column" style="background-color: rgb(134, 189, 209);">
  <h3>Notepad</h3>
+    <button onclick="clearTextArea()">Clear</button>
   <textarea id="note" cols="40" rows="15" style="font-size: 20pt"></textarea><br>
   </div>
   <div class="column" style="background-color: rgb(134, 189, 209)" >
