@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script type="text/javascript" src="Assets/scripts/script.js"></script>
+  <link rel="stylesheet" href="Assets/scripts/jerome.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <title>Jerome Tools V1.0</title>
+  <script>
+    function clearTextArea() {
+      document.getElementById('note').value = ''; // Clears the content of the textarea
+    }
+
+    function myFunction() {
+      // Declare variables
+      var input, filter, table, tr, td, i, txtValue;
+      input = document.getElementById("myInput");
+      filter = input.value.toUpperCase();
+      table = document.getElementById("myTable");
+      tr = table.getElementsByTagName("tr");
+
+      // Loop through all table rows, and hide those who don't match the search query
+      for (i = 1; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td")[0];
+        if (td) {
+          txtValue = td.textContent || td.innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            tr[i].style.display = "";
+          } else {
+            tr[i].style.display = "none";
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+  <div id="nav-placeholder"></div>
+  <script>
+    $(function() {
+      $("#nav-placeholder").load("navbar.html");
+    });
+  </script>
+
+  <div class="row">
+    <div class="column" style="background-color: rgb(134, 189, 209);">
+      <h3>Notepad</h3>
+      <button onclick="clearTextArea()">Clear</button>
+      <br><br>
+      <textarea id="note" cols="40" rows="15" style="font-size: 20pt"></textarea>
+      <br>
+    </div>
+    <div class="column" style="background-color: rgb(134, 189, 209);">
+      <br><br>
+      <iframe width="900" height="446" frameborder="0" scrolling="no" src="https://intercitygroupnz.sharepoint.com/sites/ContactCentre2/_layouts/15/Doc.aspx?sourcedoc={984cfa0a-da68-4d54-a942-f110c65ece54}&action=embedview&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&edesNext=false&ejss=false"></iframe>
+      <br>
+      <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search phone numbers">
+      <br>
+      <iframe width="900" height="446" frameborder="0" scrolling="no" src="https://example.com"></iframe> <!-- Add your desired URL in the src attribute -->
+      <br>
+      <table id="myTable">
+        <tr class="header">
+          <th style="width:40%;">Name</th>
+          <th style="width:60%;">Phone Number</th>
+        </tr>
+        <tr>
+          <td>Akaroa French Connection</td>
+          <td>0800 800 575</td>
+        </tr>
+        <tr>
+          <td>Auckland Airport</td>
+          <td>0800 247 767</td>
+        </tr>
+        <tr>
+          <td>Auckland Transport</td>
+          <td>09 366 6400</td>
+        </tr>
+        <tr>
+          <td>Baybus (Rot/Trg/Whk)</td>
+          <td>0800 422 9287</td>
+        </tr>
+        <tr>
+          <td>BUSIT - Hamilton/Waikato</td>
+          <td>0800 205 305</td>
+        </tr>
+        <tr>
+          <td>Catch A Bus South</td>
+          <td>027 449 7994</td>
+        </tr>
+        <tr>
+          <td>Friendship House Manukau</td>
+          <td>09 262 2322</td>
+        </tr>
+        <tr>
+          <td>Fullers Greatsights Paihia</td>
+          <td>0800 653 339</td>
+        </tr>
+        <tr>
+          <td>Hanmer Connections</td>
+          <td>0800 242 663</td>
+        </tr>
+        <tr>
+          <td>Greatsights Paihia</td>
+          <td>0800 653 339</td>
+        </tr>
+        <tr>
+          <td>Hobbiton</td>
+          <td>078 881 505</td>
+        </tr>
+        <tr>
+          <td>Interislander</td>
+          <td>0800 802 802</td>
+        </tr>
+        <tr>
+          <td>Metlink Wellington</td>
+          <td>0800 801 700</td>
+        </tr>
+        <tr>
+          <td>Metro Christchurch</td>
+          <td>03 366 8855</td>
+        </tr>
+        <tr>
+          <td>Orbus Queenstown Dunedin Bus</td>
+          <td>0800 672 8736</td>
+        </tr>
+        <tr>
+          <td>Queenstown Airport</td>
+          <td>03 345 0903</td>
+        </tr>
+        <tr>
+          <td>Queenstown I-site</td>
+          <td>03 442 4100</td>
+        </tr>
+        <tr>
+          <td>Skydrive Auckland</td>
+          <td>0800 759 374</td>
+        </tr>
+        <tr>
+          <td>Skydrive Queenstown</td>
+          <td>0800 405 066</td>
+        </tr>
+        <tr>
+          <td>Tairua Bus</td>
+          <td>027 211 0983</td>
+        </tr>
+        <tr>
+          <td>Tracknet Queenstown to Te Anau</td>
+          <td>0800 483 262</td>
+        </tr>
+        <tr>
+          <td>Tranzalpine</td>
+          <td>0800 872 467</td>
+        </tr>
+        <tr>
+          <td>Wellington Airport</td>
+          <td>04 385 5100</td>
+        </tr>
+      </table>
+      <br>
+    </div>
+  </div>
+  <div class="bottomnav">
+    Jerome Tools Beta Version 2023
+  </div>
+</body>
+</html>
