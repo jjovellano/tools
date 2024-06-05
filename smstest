@@ -32,7 +32,7 @@
             To : <input type="text" id="pnr" maxlength="3" onchange="generateTemplateSMS()"> eg HLZ
             <BR>
 
-Date:<BR> <textarea id="itemDescription" rows="2" maxlength="5" onchange="generateTemplateSMS()" style="text-transform:uppercase"  ></textarea> eg 18JAN<br>
+Date:<BR> <input id="itemDescription" type="date" rows="2" maxlength="5" onchange="generateTemplateSMS()" style="text-transform:uppercase"  ></input> eg 18JAN<br>
 Time:<BR> <textarea id="colourSizeBrand" rows="2" maxlength="7" onchange="generateTemplateSMS()"></textarea> eg 8:35pm<br>
 
  <textarea hidden id="whereOnTheBus" rows="2" onchange="generateTemplateSMS()"></textarea><br>
